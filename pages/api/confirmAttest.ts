@@ -28,6 +28,7 @@ export default async function createAttestation(req: NextApiRequest, res: NextAp
     const key = fromString(seed, "base16");
     const provider = new Ed25519Provider(key);
     const staticDid = new DID({
+      // @ts-expect-error: Ignore type error
       resolver: KeyResolver.getResolver(),
       provider
     });
