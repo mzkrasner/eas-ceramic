@@ -77,6 +77,20 @@
   @media (max-width: 700px) {
     width: 100%;
   }
+
+}
+
+.Check{
+  margin-bottom: 1rem;
+}
+
+.AttestContainer{
+  width: 100%;
+  background-color: #e7e3e3;
+  border-style: groove;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  
 }
 
 .IconHolder{

@@ -27,7 +27,7 @@ export default async function createAttestation(
       attestationIndex(filters: { 
         where: { 
           recipient: { 
-            equalTo: "${account}" 
+            equalTo: "${req.body.account}" 
                     } 
                   }
                 } 

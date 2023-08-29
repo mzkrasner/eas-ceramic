@@ -39,7 +39,7 @@ export function AttestationItem({ data }: Props) {
 
   return (
     <div
-      className="Container"
+      className="AttestContainer"
       onClick={() => {
         window.open(`${baseURL}/attestation/view/${data.id}`);
       }}

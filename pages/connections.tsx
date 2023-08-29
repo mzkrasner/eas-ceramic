@@ -57,6 +57,7 @@ export default function Home() {
       console.log("Found an authorized account:", acc);
       setAccount(acc.toLowerCase());
       await getAtts()
+      
     } else {
       console.log("No authorized account found");
     }
@@ -82,8 +83,8 @@ export default function Home() {
     console.log(tmpAttestations.data);
     setAttestations([]);
 
-    if (!address || !tmpAttestations.data) {
-      setLoading(false);
+    if (!account || !tmpAttestations.data) {
+      // setLoading(false);
       return;
     }
     // const tmpAttestations = await getAttestationsForAddress(address);
@@ -178,12 +179,13 @@ export default function Home() {
             <div className="AttestationHolder">
               <div className="WhiteBox">
                 {loading && <div>Loading...</div>}
+                {!loading && !attestations.length &&  <div>No one here</div>}
                 {attestations.length > 0 || loading ? (
                   attestations.map((attestation, i) => (
                     <AttestationItem key={i} data={attestation} />
                   ))
                 ) : (
-                  <div>No one here yet</div>
+                  <div></div>
                 )}
                 {!account && <button className="MetButton" onClick={async () => connectWallet()}>Connect Wallet</button>}
               </div>
