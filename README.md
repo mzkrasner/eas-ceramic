@@ -4,6 +4,8 @@ This repository contains a simple example of how to save attestations generated 
 
 Please navigate back to the `main` branch for code relevant to running locally. Reference this branch to see how to access a cloud-hosted Ceramic node endpoint (provided by hirenodes.io).
 
+Demo the application [here](https://deploy--peppy-faun-41f402.netlify.app/)
+
 ## Learn More
 
 To learn more about Ceramic please visit the following links
