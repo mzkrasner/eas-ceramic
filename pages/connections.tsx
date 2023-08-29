@@ -1,20 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
-
-import { EAS } from "@ethereum-attestation-service/eas-sdk";
-import { motion } from "framer-motion";
-import Balancer from "react-wrap-balancer";
-import styled from "styled-components";
-import "../styles/styles.css";
-import { FADE_DOWN_ANIMATION_VARIANTS } from "../config/design";
 import { networks } from "../utils/networks";
 import { AttestationItem } from "../components/AttestationItem";
 import { ResolvedAttestation } from "../utils/types";
-import { EASContractAddress } from "../utils/utils";
 
 export default function Home() {
   const [account, setAccount] = useState("");
-  const [address, setAddress] = useState("");
   const [network, setNetwork] = useState("");
   const [attestations, setAttestations] = useState<ResolvedAttestation[]>([]);
   const [loading, setLoading] = useState(false);
