@@ -1,34 +1,8 @@
-# Save Attestations to Ceramic Network with EAS
+# Save Attestations to Ceramic Network with EAS - Production Branch
 
-This repository contains a simple example of how to save attestations generated using the Ethereum Attestation Service to the Ceramic Network using ComposeDB.
+This repository contains a simple example of how to save attestations generated using the Ethereum Attestation Service to the Ceramic Network using ComposeDB. If you are reading this, you are in the `deploy` (production) branch. 
 
-## Getting Started
-
-1. Install your dependencies:
-
-```bash
-npm install
-```
-
-2. Generate your admin seed, admin did, and ComposeDB configuration file:
-
-```bash
-npm run generate
-```
-
-3. Create a .env file and enter the three required environment variables outlined in .env.example
-
-4. Run the application (make sure you are using node version 16):
-
-#### Development
-```bash
-npm begin
-```
-
-#### Build
-```bash
-npm build
-```
+Please navigate back to the `main` branch for code relevant to running locally. Reference this branch to see how to access a cloud-hosted Ceramic node endpoint (provided by hirenodes.io).
 
 ## Learn More
 
