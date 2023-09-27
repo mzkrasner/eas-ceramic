@@ -2,6 +2,7 @@
   "name": "demo",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "firstTime": "npx aws-sdk-js-codemod -t v2-to-v3 .",
     "generate": "node scripts/commands.mjs",
@@ -26,6 +27,9 @@
     "@didtools/pkh-ethereum": "0.1.0",
     "@ethereum-attestation-service/eas-sdk": "^0.29.0",
     "@metamask/sdk": "^0.5.6",
+    "@spruceid/didkit": "^0.3.0-beta.3",
+    "@spruceid/didkit-wasm": "^0.2.1",
+    "@spruceid/didkit-wasm-node": "^0.2.1",
     "alchemy-sdk": "^2.10.0",
     "axios": "^1.4.0",
     "chalk": "^5.1.2",
